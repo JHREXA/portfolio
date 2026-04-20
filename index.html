@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tu Nombre · Junior Dev (FR B2)</title>
+    <meta
+      name="description"
+      content="Portfolio Junior orientado a Java + Spring y Angular (FR B2)."
+    />
+    <meta name="author" content="Tu Nombre" />
+    <meta
+      name="keywords"
+      content="portfolio, junior, java, spring, angular, html, css, flexbox, grid, responsive"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark" aria-hidden="true">◆</span>
+          <span class="brand-name"
+            >Jesús Hernández Rexa - Desarrollador Java & Spring</span
+          >
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <ul class="nav-list">
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- HERO -->
+      <section id="inicio" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Hola, soy Jesús. Dearrollador Web Java & Spring</h1>
+
+            <p>
+              Busco una experiencia profesional para formarme y crecer en un
+              entorno internacional. Me apasionan las nuevas tecnologías y estoy
+              preparado para trabajar con <strong>Java</strong>,
+              <strong>Spring</strong> y <strong>Angular</strong>.
+              <strong>Soy bilingüe en francés, inglés e italiano</strong>.
+            </p>
+
+            <div class="badges" aria-label="Resumen rápido">
+              <span class="badge"
+                >Idiomas: Francés C2 - Inglés C2 - Italiano C2</span
+              >
+              <span class="badge">Stack: Java - Spring </span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn" href="#proyectos">Ver proyectos</a>
+              <a class="btn" href="herex.devfullstack@tutamail.com">Email</a>
+            </div>
+          </div>
+
+          <div
+            class="hero-card"
+            role="img"
+            aria-label="Tarjeta decorativa con un controlador Spring"
+          >
+            <div class="hero-card-top">
+              <span class="dot" aria-hidden="true"></span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="dot" aria-hidden="true"></span>
+            </div>
+
+            <div class="hero-card-body">
+              <pre class="code-block"><code>
+@RestController
+@RequestMapping("/api")
+public class HelloController {
+
+  @GetMapping("/bonjour")
+  public String bonjour() {
+    return "Bonjour, Je suis un développeur Java &amp; Spring";
+  }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="section">
+        <div class="container">
+          <h2>Proyectos</h2>
+
+          <div class="grid">
+            <!-- APP 1: Java + Spring -->
+            <article class="card card-java">
+              <div
+                class="card-media"
+                role="img"
+                aria-label="Vista previa de App 1"
+              ></div>
+              <div class="card-body">
+                <div class="card-title">
+                  <img
+                    class="tech-logo icon"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                    alt="Java"
+                  />
+                  <img
+                    class="tech-logo icon"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg"
+                    alt="Spring"
+                  />
+
+                  <h3>API REST E-Commerce (Java & Spring)</h3>
+                </div>
+
+                <p>
+                  Aplicación E-Commerce backend en Java y Spring. Está basada en
+                  la arquitectura de microservicios.
+                </p>
+                <a class="btn" href="https://github.com/JHREXA/Ecommerce"
+                  >Saber más...</a
+                >
+                <br />
+                <br />
+                <span class="tag tag-java">Java</span>
+                <span class="tag tag-spring">Spring</span>
+              </div>
+            </article>
+
+            <!-- APP 2: Java + Spring -->
+            <article class="card card-spring">
+              <div
+                class="card-media"
+                role="img"
+                aria-label="Vista previa de App 2"
+              ></div>
+              <div class="card-body">
+                <div class="card-title">
+                  <img
+                    class="tech-logo icon"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
+                    alt="Java"
+                  />
+                  <img
+                    class="tech-logo icon"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg"
+                    alt="Spring"
+                  />
+
+                  <h3>API REST CityTourism (Java & Spring)</h3>
+                </div>
+
+                <p>
+                  La aplicación CityTourism permite conocer una lista de hoteles
+                  y restaurantes de una ciudad particular.
+                </p>
+                <a class="btn" href="https://github.com/JHREXA/CityTourism"
+                  >Saber más...</a
+                >
+                <br />
+                <br />
+                <span class="tag tag-java">Java</span>
+                <span class="tag tag-spring">Spring Boot</span>
+              </div>
+            </article>
+
+            <!-- APP 3: Angular -->
+            <article class="card card-angular">
+              <div
+                class="card-media"
+                role="img"
+                aria-label="Vista previa de App 3"
+              ></div>
+              <div class="card-body">
+                <div class="card-title">
+                  <!-- Angular -->
+                  <img
+                    class="tech-logo"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg"
+                    alt="Angular"
+                  />
+                  <h3>Curriculum Vitae en formato web con Angular</h3>
+                </div>
+
+                <p>
+                  Este es mi currículum que utilizo como profesor de inglés en
+                  Francia, país donde he residido varios años.
+                </p>
+                <a
+                  class="btn"
+                  href="https://cv-professeur-d-anglais.web.app/accueil"
+                  >Saber más...</a
+                >
+                <br />
+                <br />
+                <span class="tag tag-angular">Angular</span>
+                <span class="tag tag-ui">UI</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROYECTOS (contacto rápido) -->
+      <section id="contacto" class="section">
+        <div class="container">
+          <h2>Contacto</h2>
+
+          <p class="muted contact-line">
+            Email:
+            <a class="about-link" href="mailto:tuemail@ejemplo.com"
+              >herex.devfullstack@tutamail.com</a
+            >
+            · Teléfono:
+            <a class="about-link" href="tel:+34 635 56 17 12"
+              >+34 635 56 17 12</a
+            >
+          </p>
+
+          <div class="mini-social" aria-label="Redes sociales">
+            <a class="mini-btn" href="#" aria-label="GitHub">GH</a>
+            <a class="mini-btn" href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© <span>2026</span> Jesús Hernández Rexa</small>
+        <ul class="social">
+          <li>
+            <a href="https://github.com/JHREXA" aria-label="Ir a GitHub"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:herex.devfullstack@tutamail.com"
+              aria-label="Enviar email"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
